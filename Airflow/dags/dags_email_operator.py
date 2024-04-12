@@ -12,6 +12,6 @@ with DAG(
     send_email_task = EmailOperator(
         task_id = 'send_email_task',
         to = '2000daehan@naver.com',
-        subject = 'Airflow test mail'
+        subject = 'Airflow test mail',
         html_content = 'Test success'
     )
