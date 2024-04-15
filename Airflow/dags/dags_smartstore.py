@@ -32,5 +32,3 @@ with DAG(
         html_content='작업 실행 결과는 성공입니다. <br> \
                     주문내역 결과 {{ti.xcom_pull(task_ids="order_list")}}건입니다. <br>'
     )
-
-order_list(get_token()) >> email_alarm
